@@ -2,6 +2,9 @@ name = "api-hub"
 main = "src/worker.js"
 compatibility_date = "2025-04-10"
 
+[vars]
+ENVIRONMENT = "production"
+
 # 指定部署区域，避开亚洲 不限制区域注释下方代码
 [placement]
 mode = "smart"
