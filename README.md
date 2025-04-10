@@ -11,9 +11,30 @@
 
 ## 🚀 快速开始
 
-### 一键部署
+## ⚡ 一键部署
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Ten-o/api_gateway_worker)
+<table>
+<tr>
+  <td>
+    <p><b>标准版本</b></p>
+    <p>部署完整功能的 API Hub</p>
+    <p>
+      <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/Ten-o/api_gateway_worker">
+        <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers" />
+      </a>
+    </p>
+  </td>
+  <td>
+    <p><b>优化版本</b></p>
+    <p>禁止亚太地区访问</p>
+    <p>
+      <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/Ten-o/api_gateway_worker/tree/exclude-asia-pacific">
+        <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers (Exclude Asia Pacific)" />
+      </a>
+    </p>
+  </td>
+</tr>
+</table>
 
 1. 点击上方按钮
 2. 登录你的 Cloudflare 账号
