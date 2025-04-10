@@ -61,9 +61,9 @@ npm run deploy
 - Telegram Bot API (`/telegram/*`)
 
 ### 核心优势
+- 统一入口 统一管理
 - 简单易用的配置方式
 - 优雅的 Web UI 界面
-- 自动负载均衡
 - 支持跨域请求（CORS）
 - 保持原始 API 的请求格式
 
@@ -102,6 +102,3 @@ const API_CONFIGS = {
 - [GitHub Issues](https://github.com/Ten-o/api_gateway_worker/issues)
 - [演示站点](https://api.ixu.cc)
 
-## 📄 开源协议
-
-MIT License
