@@ -25,7 +25,7 @@
   </td>
   <td>
     <p><b>优化版本</b></p>
-    <p>禁止亚太地区访问</p>
+    <p>禁止出口(禁止亚太区域)</p>
     <p>
       <a href="https://deploy.workers.cloudflare.com/?url=https://github.com/Ten-o/api_gateway_worker/tree/exclude-asia-pacific">
         <img src="https://deploy.workers.cloudflare.com/button" alt="Deploy to Cloudflare Workers (Exclude Asia Pacific)" />
