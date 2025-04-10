@@ -84,12 +84,12 @@ const API_CONFIGS = {
           .header {
               text-align: center;
               margin-bottom: 3rem;
-              padding: 2rem 0;
+              padding: 2rem 0 1rem; /* 减小整体内边距 */
           }
   
           .header h1 {
               font-size: 2.5rem;
-              margin-bottom: 1rem;
+              margin-bottom: 0.5rem; /* 减小标题和描述之间的间距 */
               background: linear-gradient(120deg, #FF0080, #7928CA, #0066ff);
               -webkit-background-clip: text;
               background-clip: text;
@@ -115,6 +115,7 @@ const API_CONFIGS = {
               font-size: 1.1rem;
               position: relative;
               display: inline-block;
+              margin-top: 0.25rem; /* 微调描述文字的上边距 */
           }
   
           .header p::after {
@@ -123,7 +124,7 @@ const API_CONFIGS = {
               display: inline-block;
               animation: float 2s ease-in-out infinite;
           }
-  
+  aa'cc
           @keyframes float {
               0%, 100% { transform: translateY(0); }
               50% { transform: translateY(-10px); }
@@ -249,6 +250,33 @@ const API_CONFIGS = {
               transition: opacity 0.3s ease;
           }
   
+          .github-link {
+              display: inline-flex;
+              align-items: center;
+              gap: 0.75rem;
+              color: #24292e;
+              text-decoration: none;
+              font-size: 1.1rem;
+              margin: 1.5rem auto;
+              padding: 0.75rem 1.5rem;
+              border-radius: 12px;
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          }
+  
+          .github-link:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+              background: #f6f8fa;
+          }
+  
+          .github-icon {
+              width: 24px;
+              height: 24px;
+          }
+  
           @media (max-width: 640px) {
               .container {
                   padding: 1rem;
@@ -267,6 +295,15 @@ const API_CONFIGS = {
           <div class="header">
               <h1>API 代理服务</h1>
               <p>一站式 API 代理服务</p>
+          </div>
+          <!-- 减小上方间距 -->
+          <div style="text-align: center; margin: -4rem 0 0rem;">
+              <a href="https://github.com/Ten-o/api_gateway_worker" class="github-link" target="_blank">
+                  <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  在 GitHub 上查看源码
+              </a>
           </div>
           <div class="grid">
               ${Object.entries(API_CONFIGS).map(([provider, config], index) => `
