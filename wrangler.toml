@@ -10,3 +10,4 @@ ENVIRONMENT = "production"
 [placement]
 mode = "smart"
 regions = ["wnam", "enam", "weur", "eeur"] # 北美西部、北美东部、欧洲西部、欧洲东部
+
