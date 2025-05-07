@@ -50,21 +50,15 @@
 4. 复制 `src/worker.js` 中的代码到 Worker 编辑器
 5. 点击 "Save and Deploy"
 
-### 本地开发
+### 本地部署
 
 ```bash
 # 克隆项目
 git clone https://github.com/Ten-o/api_gateway_worker.git
 cd api_gateway_worker
 
-# 安装依赖
-npm install
-
-# 本地开发
-npm run dev
-
 # 部署
-npm run deploy
+node src/deploy
 ```
 
 ## ⚡ 功能特性
@@ -107,7 +101,8 @@ const API_CONFIGS = {
 ```
 .
 ├── src/
-│   ├── worker.js      # 主要业务逻辑
+│   ├── worker.js      # cf worker 部署
+│   ├── server.js      # 服务器部署
 │   └── ...
 ├── package.json
 └── README.md
